@@ -8,14 +8,20 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-scripts": "2.1.8",
-    "roast": "^2.3.14"
+    "roast": "*"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npm run linter && react-scripts build",
     "deploy": "npm run build && roast deploy",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "linter": "standard --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm build"
+    }
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -25,5 +31,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "husky": "^1.3.1",
+    "standard": "*"
+  }
 }
