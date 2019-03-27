@@ -1,0 +1,5 @@
+1. Replace Git origin.
+2. Run `grep -Hnr "react-template" ./package.json ./public/ ./src/`.
+3. Replace all occurences with the project name.
+4. Add the license if you need to.
+5. Remove this file.

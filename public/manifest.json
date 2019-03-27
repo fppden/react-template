@@ -1,6 +1,6 @@
 {
-  "short_name": "React Calendar",
-  "name": "React Calendar Playground",
+  "short_name": "react-template",
+  "name": "react-template",
   "icons": [
     {
       "src": "favicon.ico",
